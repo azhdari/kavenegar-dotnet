@@ -1,20 +1,30 @@
-# Dotnet SDK
+# .Net Core SDK
 
-# <a href="http://kavenegar.com/rest.html">Kavenegar RESTful API Document</a>
-If you need to future information about API document Please visit RESTful Document
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/azhdari/kavenegar-dotnet/blob/master/LICENSE)
+[![NuGet](https://img.shields.io/badge/nuget-2.0.0-blue.svg?style=flat-square)](https://www.nuget.org/packages/kavenegar-dotnetcore/2.0.0)
+
+Checkout <a href="http://kavenegar.com/rest.html">Kavenegar RESTful API Document</a>
 
 ## Installation
-<p>
+
 First of all, You need to make an account on Kavenegar from <a href="https://panel.kavenegar.com/Client/Membership/Register">Here</a>
-</p>
-<p>
 After that you just need to pick API-KEY up from <a href="http://panel.kavenegar.com/Client/setting/index">My Account</a> section.
-You can download the C# SDK <a href="https://raw.githubusercontent.com/KaveNegar/kavenegar-csharp/master/Kavenegar/bin/Debug/Kavenegar.dll">Here</a> or just pull it.
-Anyway there is good tutorial about <a href="http://gun.io/blog/how-to-github-fork-branch-and-pull-request/">Pull  request</a>
-</p>
+
+From the command prompt
+```bash
+dotnet add package kavenegar-dotnetcore
+```
+or
+```bash
+Install-Package kavenegar-dotnetcore
+```
+or
+```bash
+paket add kavenegar-dotnetcore
+```  
 
 ## Usage
-Well, There is an example to Send SMS by C#.
+How to send SMS:
 
 ```c#
 try
@@ -38,10 +48,10 @@ catch (Kavenegar.Exceptions.HttpException ex)
 ```
 
 ## Contribution
-Bug fixes, docs, and enhancements welcome! Please let us know <a href="mailto:support@kavenegar.com?Subject=SDK" target="_top">support@kavenegar.com</a>
+You're welcome to send PR.
 <hr>
 <div dir='rtl'>
-	
+
 ## راهنما
 
 ### معرفی سرویس کاوه نگار
