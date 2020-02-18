@@ -2,19 +2,14 @@ using Kavenegar.Models.Enums;
 
 namespace Kavenegar.Exceptions
 {
- public class ApiException : KavenegarException
- {
-	readonly MetaCode _result;
-	public ApiException(string message, int code)
-	 : base(message)
-	{
-	 _result = (MetaCode)code;
-	}
+    public class ApiException : KavenegarException
+    {
+        public ApiException(string message, MetaCode code)
+            : base(message)
+        {
+            Code = code;
+        }
 
-	public MetaCode Code
-	{
-	 get { return _result; }
-	}
-
- }
+        public MetaCode Code { get; }
+    }
 }
